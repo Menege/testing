@@ -1,3 +1,5 @@
+
+
 .personality {
   background: linear-gradient(360deg, #eceef2 0%, rgba(236, 238, 242, 0) 100%);
   width: 100%;
@@ -16,6 +18,7 @@
   padding-left: 16px;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 400;
   text-align: left;
 }
 
@@ -29,22 +32,21 @@
   align-items: center;
 }
 
-
 .logo_set {
   padding: 24px;
 }
 
-
-.text_set img{
-    padding-left: 17px;
+.text_set img {
+  padding-left: 17px;
 }
 .zapros_button {
   color: #ffffff;
-  align-items: center;
+  padding: 10px;
   background: #0d870d;
   border-radius: 6px;
   width: 232px;
   height: 50px;
+  margin-top: 16px;
   margin-right: 24px;
   margin-bottom: 24px;
 }
@@ -65,14 +67,33 @@
 
 .first_view {
   display: flex;
+  justify-content: space-around;
 }
 
 .first_view video {
   max-width: 832px;
 }
 
+.franch_discr h3 {
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+.franch_discr p {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
 .voice h3 {
   padding-left: 32px;
+}
+
+.persona {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.persona_p {
+  font-weight: 400;
+  padding-left: 8px;
 }
 
 .voice p {
@@ -94,6 +115,9 @@
   align-items: center;
   text-align: center;
 }
+.flex {
+  display: flex;
+}
 
 .company {
   margin-top: 118px;
@@ -109,10 +133,22 @@
   border-radius: 16px;
 }
 
+.border-captcha h6{
+  margin-right: 16px;
+  margin-top:21px;
+  margin-bottom: 19px;
+  color: #6f766f;
+  font-weight: 400;
+  text-align: right;
+}
 .download {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 24px;
+}
+.download h5 {
+  margin-left: 16px;
 }
 
 .image-carousel {
@@ -122,7 +158,12 @@
 .item {
   margin-right: 11px;
 }
-
+.h4__reset {
+  margin-bottom: 0;
+}
+.h5__reset {
+  font-weight: 400;
+}
 .company_metrics h4 p {
   margin-bottom: 0px;
 }
@@ -170,6 +211,7 @@
   height: 50px;
   margin-top: 8px;
   margin-bottom: 16px;
+  border: none;
 }
 
 .stroke {
@@ -193,9 +235,247 @@
   background: white;
   width: 240px;
   height: 50px;
-  border: 1px solid rgba(165, 148, 148, 0.2);
+  padding: 10px;
+  border: 2px solid rgba(165, 148, 148, 0.2);
   box-sizing: border-box;
   border-radius: 6px;
   margin-bottom: 40px;
   margin-top: 42px;
+}
+
+.video__franchize_title_mobile {
+  display: none;
+}
+.conc-bebos_mobile {
+  display: none;
+}
+.first_view_mobile {
+  display: none;
+}
+.text_set img {
+  display: none;
+}
+.grey_font {
+  color: #6f766f;
+  font-weight: 400;
+}
+.font {
+  font-weight: 400;
+}
+.company_mobile{
+  display: none;
+}
+@media screen and (min-width: 479px) {
+  .custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  .custom-checkbox + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  .custom-checkbox + label::before {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 16px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  .custom-checkbox:checked + label::before {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+    background-image: url("./../img/Rectangle.svg");
+  } 
+}
+
+@media screen and (max-width: 479px) {
+  .custom-checkbox{
+    margin-top:20px ;
+    margin-left: 10px;
+    width:32px;
+    height: 32px;
+  } 
+  .video__franchize_title {
+    display: none;
+  }
+  .conc-bebos {
+    display: none;
+  }
+  .video__franchize_title_mobile {
+    display: block;
+    margin-top: 34px;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .conc-bebos {
+    display: none;
+  }
+  .conc-bebos_mobile {
+    display: none;
+    padding-top: 32px;
+    display: flex;
+    align-items: center;
+  }
+  .conc-bebos_mobile img {
+    width: 56px;
+    height: 56px;
+    margin-right: 18px;
+  }
+  .conc-bebos_mobile h5 {
+    font-weight: 400;
+  }
+  .conc-bebos_mobile h5 span {
+    font-weight: 700;
+  }
+  .first_view {
+    display: none;
+  }
+
+  .first_view_mobile video {
+    max-width: 343px;
+  }
+  .first_view_mobile {
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .personality {
+    height: 650px;
+  }
+  .voice_link {
+    display: flex;
+    justify-content: center;
+  }
+  .voice_link a {
+    padding: 4px;
+  }
+
+  .voice_mobile {
+    text-align: center;
+  }
+  .voice_mobile h3 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+
+  .flex_block2 {
+    display: block;
+  }
+
+  .logo_set {
+    padding: 16px;
+  }
+
+  .text_set img {
+    margin: 0px;
+    padding: 0px;
+  }
+  .zapros_button {
+    color: #ffffff;
+    padding: 10px;
+    background: #0d870d;
+    border-radius: 6px;
+    width: 295px;
+    height: 50px;
+    margin-top: 16px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    border: none;
+  }
+
+  .fin_zapros {
+    display: block;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    width: 343px;
+    height: 437px;
+    position: static;
+    margin-top: 32px;
+  }
+  .persona {
+    display: flex;
+    justify-content: center;
+  }
+  .company_mobile{
+    margin-top: 32px;
+    display: block;
+  }
+  .company__about {
+    margin-right: 16px;
+  }
+  .company {
+    display: none;
+  }
+  .item {
+    width: 167px;
+    height: 167px;
+    margin-right: 0px;
+    padding: 4px;
+  }
+  .input__type {
+    background: #ffffff;
+    padding-left: 44px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 295px;
+    height: 42px;
+    margin-bottom: 8px;
+  }
+  
+  .input__area {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 295px;
+    height: 86px;
+  }
+  .border-captcha {
+    background: #eceef2;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 295px;
+    height: 80px;
+  }
+  .send-message {
+    color: #ffffff;
+    background: #0d870d;
+    border-radius: 6px;
+    width: 295px;
+    height: 50px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border: none;
+    padding: 10px;
+  }
+  .company_metrics{
+    display: none;
+  }
+  .item-down img{
+    width: 300px;
+  }
+  .blocks{
+    overflow-x: auto;
+  }
+  .form-left form{
+    margin-top: 8px;
+  }
+  
 }
